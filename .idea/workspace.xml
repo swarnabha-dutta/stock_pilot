@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="713df86e-9465-4b1a-873f-96f434df3e41" name="Changes" comment="" />
+    <list default="true" id="713df86e-9465-4b1a-873f-96f434df3e41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/(root)/layout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NavItems.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UserDropDown.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/dashboard-preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/dashboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,8 +46,11 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/stockpilot/public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -46,9 +68,25 @@
       <recent name="D:\stockpilot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\stockpilot\public" />
       <recent name="D:\stockpilot\app" />
+      <recent name="D:\stockpilot\app\(root)" />
+      <recent name="D:\stockpilot\public" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -66,7 +104,10 @@
       <updated>1763201015025</updated>
       <workItem from="1763201016033" duration="199000" />
       <workItem from="1763211407689" duration="267000" />
-      <workItem from="1763242722602" duration="5594000" />
+      <workItem from="1763242722602" duration="7082000" />
+      <workItem from="1763250477191" duration="3014000" />
+      <workItem from="1763300510485" duration="932000" />
+      <workItem from="1763339189075" duration="4991000" />
     </task>
     <servers />
   </component>
@@ -78,7 +119,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/ui/button.jsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
