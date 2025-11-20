@@ -4,15 +4,9 @@ import { Button } from "@/components/ui/button"
 import {
     DropdownMenu,
     DropdownMenuContent,
-    DropdownMenuGroup,
     DropdownMenuItem,
     DropdownMenuLabel,
-    DropdownMenuPortal,
     DropdownMenuSeparator,
-    DropdownMenuShortcut,
-    DropdownMenuSub,
-    DropdownMenuSubContent,
-    DropdownMenuSubTrigger,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import {useRouter} from "next/navigation";
@@ -24,13 +18,20 @@ import {
 import {LogOut} from "lucide-react";
 import NavItems from "@/components/NavItems";
 import {signOut} from "@/lib/actions/auth.actions";
+import {toast} from "sonner";
 
 const UserDropDown = ({user}) => {
     const router = useRouter();
 
     const handleSignOut = async()=>{
-        await signOut();
-        router.push("/sign-in");
+        const result = await signOut();
+        if(result?.success === false){
+            toast.error('Sign out failed',{
+                description:result.error || 'Please try again'
+            });
+            return;
+        }
+        router.push('/sign-in');
     }
 
     return (
