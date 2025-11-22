@@ -70,11 +70,15 @@ export default function SearchCommand({
 
     return (
         <>
-            {renderAs === "text" ? (
-                <span onClick={() => setOpen(true)} className="search-text">
-          {label}
-        </span>
-            ) : (
+        {renderAs === "text" ? (
+        <button
+            type="button"
+            onClick={() => setOpen(true)}
+            className="search-text"
+        >
+            {label}
+        </button>
+        ) : (
                 <Button onClick={() => setOpen(true)} className="search-btn">
                     {label}
                 </Button>

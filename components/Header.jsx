@@ -5,7 +5,13 @@ import UserDropDown from "@/components/UserDropDown";
 import { searchStocks } from "@/lib/actions/finnhub.actions";
 
 const Header = async ({ user }) => {
-    const initialStocks = await searchStocks();
+    let initialStocks = [];
+
+    try {
+        initialStocks = await searchStocks();
+    } catch (error) {
+        console.error("Failed to load initial stocks for header", error);
+    }
 
     return (
         <header className="sticky top-0 header">
