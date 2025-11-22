@@ -5,18 +5,19 @@ import {
     CommandDialog,
     CommandEmpty,
     CommandInput,
-    CommandList
+    CommandList,
 } from "@/components/ui/command";
 import { Button } from "@/components/ui/button";
-import {Loader2, Star, TrendingUp} from "lucide-react";
+import { Loader2, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import { searchStocks } from "@/lib/actions/finnhub.actions";
 import { useDebounce } from "@/hooks/useDebounce";
+import WatchlistButton from "./WatchlistButton";
 
 export default function SearchCommand({
                                           renderAs = "button",
                                           label = "Add stock",
-                                          initialStocks = []
+                                          initialStocks = [],
                                       }) {
     const [open, setOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
@@ -26,7 +27,7 @@ export default function SearchCommand({
     const isSearchMode = !!searchTerm.trim();
     const displayStocks = isSearchMode ? stocks : stocks.slice(0, 10);
 
-
+    // ------------ Handle CMD + K Shortcut -------------
     useEffect(() => {
         const onKeyDown = (e) => {
             if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
@@ -38,7 +39,7 @@ export default function SearchCommand({
         return () => window.removeEventListener("keydown", onKeyDown);
     }, []);
 
-    // Search Handler
+    // ------------ Searching -------------
     const handleSearch = async () => {
         if (!isSearchMode) {
             setStocks(initialStocks);
@@ -68,17 +69,24 @@ export default function SearchCommand({
         setStocks(initialStocks);
     };
 
+    // ------------ Update watchlist status UI instantly -------------
+    const handleWatchlistChange = (symbol, isAdded) => {
+        setStocks((prev) =>
+            prev.map((stock) =>
+                stock.symbol === symbol
+                    ? { ...stock, isInWatchlist: isAdded }
+                    : stock
+            )
+        );
+    };
+
     return (
         <>
-        {renderAs === "text" ? (
-        <button
-            type="button"
-            onClick={() => setOpen(true)}
-            className="search-text"
-        >
-            {label}
-        </button>
-        ) : (
+            {renderAs === "text" ? (
+                <span onClick={() => setOpen(true)} className="search-text">
+          {label}
+        </span>
+            ) : (
                 <Button onClick={() => setOpen(true)} className="search-btn">
                     {label}
                 </Button>
@@ -125,7 +133,14 @@ export default function SearchCommand({
                                                 {stock.symbol} | {stock.exchange} | {stock.type}
                                             </div>
                                         </div>
-                                        <Star/>
+
+                                        <WatchlistButton
+                                            symbol={stock.symbol}
+                                            company={stock.name}
+                                            isInWatchlist={stock.isInWatchlist}
+                                            onWatchlistChange={handleWatchlistChange}
+                                            type="icon"
+                                        />
                                     </Link>
                                 </li>
                             ))}
