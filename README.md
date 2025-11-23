@@ -192,7 +192,9 @@ npm run dev
 
 👤 **Developer:** Swarnabha Dutta
 📧 Email: [swarnabhadutta909@gmail.com](mailto:swarnabhadutta909@gmail.com)
+
 🔗 LinkedIn: [https://www.linkedin.com/in/swarnabhadutta909/](https://www.linkedin.com/in/swarnabhadutta909/)
+
 🌐 Portfolio: [https://animated-3-d-portfolio.vercel.app/](https://animated-3-d-portfolio.vercel.app/)
 
 ---
@@ -200,15 +202,3 @@ npm run dev
 <p align="center">Made with ❤️ by Swarnabha Dutta — Empowering smarter investments.</p>
 ```
 
----
-
-If you want, I can also:
-
-✅ Create a logo for StockPilot
-✅ Add architecture diagram
-✅ Add ER diagram for Watchlist
-✅ Add workflow diagrams
-✅ Add contributing guidelines
-✅ Add badges for license, status, build, coverage
-
-Just say **“add diagrams”** or **“add logo”**.
