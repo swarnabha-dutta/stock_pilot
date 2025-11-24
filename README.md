@@ -73,6 +73,14 @@ To ensure a smooth and secure user experience, StockPilot includes fully automat
   <img src="/public/screenshots/Sign-In Workflow.png" alt="Sign In Workflow" width="800">
 </p>
 
+## 🗂 Watchlist Data Model
+
+<p align="center">
+  <img src="/public/screenshots/schema-diagram.png" alt="Watchlist Data Model" width="900" />
+</p>
+
+*Figure: Watchlist — users ⇆ watchlist ⇆ companies relationship (primary keys & symbol unique constraint).*
+
 ---
 
 ### ⭐ **Watchlist Management**
