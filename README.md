@@ -40,8 +40,28 @@ Simple. Powerful. Designed for everyday traders and long-term investors.
 - MFA-ready authentication flow
 - Protected routes for user-specific actions
 
+---
+
+## 🧭 Authentication Workflows
+
+To ensure a smooth and secure user experience, StockPilot includes fully automated and event-driven authentication flows.
+
+### 🔐 Sign-Up Workflow (Event-Driven + Inngest Automation)
+
+<p align="center">
+  <img src="/public/screenshots/Sign-Up Workflow.png" alt="Sign Up Workflow" width="800">
+</p>
+
+### 🔑 Sign-In Workflow
+
+<p align="center">
+  <img src="/public/screenshots/Sign-In Workflow.png" alt="Sign In Workflow" width="800">
+</p>
+
+---
+
 ### ⭐ **Watchlist Management**
-- Add/remove stocks instantly
+- Add/remove stocks instantly  
 - Optimistic UI updates  
 - Trash-icon removal  
 - Watchlist stored in MongoDB with user mapping  
@@ -191,14 +211,15 @@ npm run dev
 ## 📬 Contact
 
 👤 **Developer:** Swarnabha Dutta
+
 📧 Email: [swarnabhadutta909@gmail.com](mailto:swarnabhadutta909@gmail.com)
 
 🔗 LinkedIn: [https://www.linkedin.com/in/swarnabhadutta909/](https://www.linkedin.com/in/swarnabhadutta909/)
 
 🌐 Portfolio: [https://animated-3-d-portfolio.vercel.app/](https://animated-3-d-portfolio.vercel.app/)
 
+
 ---
 
 <p align="center">Made with ❤️ by Swarnabha Dutta — Empowering smarter investments.</p>
-```
 
