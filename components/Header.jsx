@@ -20,9 +20,9 @@ const Header = async ({ user }) => {
                     <Image
                         src="/assets/icons/logo.svg"
                         alt="Signalist logo"
-                        width={140}
-                        height={32}
-                        className="h-8 w-auto cursor-pointer"
+                        width={420}
+                        height={420}
+                        className="h-11 w-auto cursor-pointer"
                     />
                 </Link>
 
