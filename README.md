@@ -1,4 +1,3 @@
-
 <h1 align="center">📈 StockPilot</h1>
 
 <p align="center"><em>A real-time stock tracking & market intelligence platform powered by AI-generated summaries, personalized news, and watchlist automation.</em></p>
@@ -17,16 +16,32 @@
 
 ---
 
+## 📸 Project Screenshots
+
+<p align="center">
+  <img src="/public/screenshots/Landing-page.png" width="800" alt="Landing Page" />
+</p>
+
+<p align="center">
+  <img src="/public/screenshots/LandingPage2.png" width="800" alt="Landing Page 2" />
+</p>
+
+<p align="center">
+  <img src="/public/screenshots/Watchlist.png" width="800" alt="Watchlist Page" />
+</p>
+
+---
+
 ## 🚀 Overview
 
 **StockPilot** is an intelligent stock market monitoring platform with:
 
-- Real-time stock quotes  
-- AI-generated market summaries  
-- Personalized daily news (per-user)  
-- Fully functional watchlist  
-- Beautiful analytics widgets using TradingView  
-- Secure authentication powered by **BetterAuth**  
+- Real-time stock quotes
+- AI-generated market summaries
+- Personalized daily news (per-user)
+- Fully functional watchlist
+- Beautiful analytics widgets using TradingView
+- Secure authentication powered by **BetterAuth**
 - Background automations via **Inngest**
 
 Simple. Powerful. Designed for everyday traders and long-term investors.
@@ -61,52 +76,52 @@ To ensure a smooth and secure user experience, StockPilot includes fully automat
 ---
 
 ### ⭐ **Watchlist Management**
-- Add/remove stocks instantly  
-- Optimistic UI updates  
-- Trash-icon removal  
-- Watchlist stored in MongoDB with user mapping  
+- Add/remove stocks instantly
+- Optimistic UI updates
+- Trash-icon removal
+- Watchlist stored in MongoDB with user mapping
 - Automatic revalidation of `/watchlist` route
 
 ### 📰 **Daily AI-Generated Market Summary**
-- Inngest cron job runs daily  
-- Fetches user watchlist → retrieves news → summarizes using Gemini AI  
+- Inngest cron job runs daily
+- Fetches user watchlist → retrieves news → summarizes using Gemini AI
 - Sends email to each user with:
-  - Market summary  
-  - Watchlist-specific news  
-  - Clean formatted email design
+    - Market summary
+    - Watchlist-specific news
+    - Clean formatted email design
 
 ### 🔍 **Smart Stock Search**
-- Fast fuzzy search using Finnhub `/search`  
-- Recent + popular stocks shown with caching  
-- Debounced search for high performance  
-- Beautiful CommandPalette (Shadcn) UI  
+- Fast fuzzy search using Finnhub `/search`
+- Recent + popular stocks shown with caching
+- Debounced search for high performance
+- Beautiful CommandPalette (Shadcn) UI
 
 ### 📊 **TradingView Widgets Integration**
-- Symbol Info  
-- Candlestick Chart  
-- Baseline Chart  
-- Technical Analysis  
-- Company Profile  
-- Financials  
+- Symbol Info
+- Candlestick Chart
+- Baseline Chart
+- Technical Analysis
+- Company Profile
+- Financials
 
 ### 📈 **Stock Details Page**
-- Live price  
-- Percentage change  
-- Market cap  
-- P/E ratio  
-- Daily/weekly performance  
-- Add/remove from watchlist  
-- Multiple rich TradingView widgets  
+- Live price
+- Percentage change
+- Market cap
+- P/E ratio
+- Daily/weekly performance
+- Add/remove from watchlist
+- Multiple rich TradingView widgets
 
 ### 📬 **Email System**
-- Welcome email using AI personalization prompt  
-- Daily news email (Summarized via Gemini AI)  
-- Nodemailer + custom template support  
+- Welcome email using AI personalization prompt
+- Daily news email (Summarized via Gemini AI)
+- Nodemailer + custom template support
 
 ### ⚙️ **Background Jobs (Inngest)**
-- Daily cron job for news summary  
-- Event-based welcome email  
-- Scalable serverless execution  
+- Daily cron job for news summary
+- Event-based welcome email
+- Scalable serverless execution
 
 ---
 
@@ -145,41 +160,38 @@ To ensure a smooth and secure user experience, StockPilot includes fully automat
 
 ## ⚙️ **Workflow Summary**
 
-### ▶️ User Sign-Up  
+### ▶️ User Sign-Up
 ✔️ BetterAuth → event triggers Inngest → Gemini AI generates personalized intro → welcome email sent.
 
-### ▶️ User Adds Stock to Watchlist  
+### ▶️ User Adds Stock to Watchlist
 ✔️ API → MongoDB entry → UI updates → Page revalidated.
 
-### ▶️ Daily Summary  
+### ▶️ Daily Summary
 ✔️ Inngest cron → fetch per-user watchlist → fetch news → summarize → send email.
 
-### ▶️ Searching Stocks  
+### ▶️ Searching Stocks
 ✔️ Debounced search → Finnhub API → cached responses → displayed in command menu.
 
-### ▶️ Viewing Any Stock  
+### ▶️ Viewing Any Stock
 ✔️ Fetch quote, profile, metrics → display multiple TradingView widgets → watchlist toggle.
 
 ---
 
 ## 🧑‍💻 **Local Setup**
 
-### 🔹 Clone Repo  
+### 🔹 Clone Repo
 ```bash
 git clone https://github.com/swarnabha-dutta/stock_pilot.git
 cd stock_pilot
-````
+```
 
 ### 🔹 Install Dependencies
-
 ```bash
 npm install
 ```
 
 ### 🔹 Configure Environment
-
 Create `.env`:
-
 ```
 MONGODB_URL=your_mongodb_url
 NEXT_PUBLIC_FINNHUB_API_KEY=your_finnhub_key
@@ -190,7 +202,6 @@ EMAIL_SERVER_PASSWORD=your_password
 ```
 
 ### 🔹 Run Dev Server
-
 ```bash
 npm run dev
 ```
@@ -210,16 +221,11 @@ npm run dev
 
 ## 📬 Contact
 
-👤 **Developer:** Swarnabha Dutta
-
-📧 Email: [swarnabhadutta909@gmail.com](mailto:swarnabhadutta909@gmail.com)
-
-🔗 LinkedIn: [https://www.linkedin.com/in/swarnabhadutta909/](https://www.linkedin.com/in/swarnabhadutta909/)
-
-🌐 Portfolio: [https://animated-3-d-portfolio.vercel.app/](https://animated-3-d-portfolio.vercel.app/)
-
+👤 **Developer:** Swarnabha Dutta  
+📧 Email: [swarnabhadutta909@gmail.com](mailto:swarnabhadutta909@gmail.com)  
+🔗 LinkedIn: https://www.linkedin.com/in/swarnabhadutta909/  
+🌐 Portfolio: https://animated-3-d-portfolio.vercel.app/
 
 ---
 
 <p align="center">Made with ❤️ by Swarnabha Dutta — Empowering smarter investments.</p>
-
