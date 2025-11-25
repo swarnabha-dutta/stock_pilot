@@ -18,8 +18,8 @@ const Header = async ({ user }) => {
             <div className="container header-wrapper">
                 <Link href="/">
                     <Image
-                        src="/assets/icons/logo.svg"
-                        alt="Signalist logo"
+                        src="/assets/icons/logo.png"
+                        alt="StockPilot logo"
                         width={420}
                         height={420}
                         className="h-11 w-auto cursor-pointer"
