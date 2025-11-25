@@ -30,6 +30,10 @@
   <img src="/public/screenshots/Watchlist.png" width="800" alt="Watchlist Page" />
 </p>
 
+<p align="center">
+  <img src="/public/screenshots/Stocks.png" width="800" alt="Watchlist Page" />
+</p>
+
 ---
 
 ## 🚀 Overview
@@ -80,6 +84,8 @@ To ensure a smooth and secure user experience, StockPilot includes fully automat
 </p>
 
 *Figure: Watchlist — users ⇆ watchlist ⇆ companies relationship (primary keys & symbol unique constraint).*
+
+
 
 ---
 
