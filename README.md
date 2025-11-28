@@ -242,7 +242,7 @@ npm run dev
 ## 🔄 CI/CD Pipeline
 
 StockPilot is powered by a **fully automated CI/CD pipeline using Vercel**, ensuring continuous integration and zero-downtime deployments.
-## 🔄 CI/CD Pipeline
+## 🔄Diagram
 <p align="center">
   <img src="/public/screenshots/CI-CD.png" width="750" />
 </p>
