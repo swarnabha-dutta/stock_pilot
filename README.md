@@ -16,10 +16,10 @@
 
 ---
 
-## 📸 Project Screenshots
+## 📸 Project Overview
 
 <p align="center">
-  <img src="/public/screenshots/Landing-page.png" width="800" alt="Landing Page" />
+    <img src="/public/screenshots/Landing-page.png" width="2030" alt="Landing Page" />
 </p>
 
 <p align="center">
@@ -27,11 +27,16 @@
 </p>
 
 <p align="center">
-  <img src="/public/screenshots/Watchlist.png" width="800" alt="Watchlist Page" />
+  <img src="/public/screenshots/watchlist.png" width="800" alt="Watchlist Page" />
 </p>
 
 <p align="center">
   <img src="/public/screenshots/Stocks.png" width="800" alt="Watchlist Page" />
+</p>
+
+
+<p align="center">
+  <img src="/public/screenshots/market-summary.png" width="800" alt="Watchlist Page" />
 </p>
 
 ---
@@ -68,13 +73,13 @@ To ensure a smooth and secure user experience, StockPilot includes fully automat
 ### 🔐 Sign-Up Workflow (Event-Driven + Inngest Automation)
 
 <p align="center">
-  <img src="/public/screenshots/Sign-Up Workflow.png" alt="Sign Up Workflow" width="800">
+  <img src="/public/screenshots/Sign-up-workflow.png" alt="Sign Up Workflow" width="800">
 </p>
 
 ### 🔑 Sign-In Workflow
 
 <p align="center">
-  <img src="/public/screenshots/Sign-In Workflow.png" alt="Sign In Workflow" width="800">
+  <img src="/public/screenshots/Sign-in-workflow.png" alt="Sign In Workflow" width="800">
 </p>
 
 ## 🗂 Watchlist Data Model
@@ -175,19 +180,19 @@ To ensure a smooth and secure user experience, StockPilot includes fully automat
 ## ⚙️ **Workflow Summary**
 
 ### ▶️ User Sign-Up
-✔️ BetterAuth → event triggers Inngest → Gemini AI generates personalized intro → welcome email sent.
+ BetterAuth → event triggers Inngest → Gemini AI generates personalized intro → welcome email sent.
 
 ### ▶️ User Adds Stock to Watchlist
-✔️ API → MongoDB entry → UI updates → Page revalidated.
+ API → MongoDB entry → UI updates → Page revalidated.
 
 ### ▶️ Daily Summary
-✔️ Inngest cron → fetch per-user watchlist → fetch news → summarize → send email.
+ Inngest cron → fetch per-user watchlist → fetch news → summarize → send email.
 
 ### ▶️ Searching Stocks
-✔️ Debounced search → Finnhub API → cached responses → displayed in command menu.
+ Debounced search → Finnhub API → cached responses → displayed in command menu.
 
 ### ▶️ Viewing Any Stock
-✔️ Fetch quote, profile, metrics → display multiple TradingView widgets → watchlist toggle.
+ Fetch quote, profile, metrics → display multiple TradingView widgets → watchlist toggle.
 
 ---
 
