@@ -85,7 +85,7 @@ To ensure a smooth and secure user experience, StockPilot includes fully automat
 ## 🗂 Watchlist Data Model
 
 <p align="center">
-  <img src="/public/screenshots/schema-diagram.png" alt="Watchlist Data Model" width="900" />
+  <img src="/public/screenshots/watchlist-data-model.png" alt="Watchlist Data Model" width="900" />
 </p>
 
 *Figure: Watchlist — users ⇆ watchlist ⇆ companies relationship (primary keys & symbol unique constraint).*
