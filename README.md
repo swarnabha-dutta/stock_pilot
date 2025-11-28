@@ -180,19 +180,19 @@ To ensure a smooth and secure user experience, StockPilot includes fully automat
 ## ⚙️ **Workflow Summary**
 
 ### ▶️ User Sign-Up
- BetterAuth → event triggers Inngest → Gemini AI generates personalized intro → welcome email sent.
+BetterAuth → event triggers Inngest → Gemini AI generates personalized intro → welcome email sent.
 
 ### ▶️ User Adds Stock to Watchlist
- API → MongoDB entry → UI updates → Page revalidated.
+API → MongoDB entry → UI updates → Page revalidated.
 
 ### ▶️ Daily Summary
- Inngest cron → fetch per-user watchlist → fetch news → summarize → send email.
+Inngest cron → fetch per-user watchlist → fetch news → summarize → send email.
 
 ### ▶️ Searching Stocks
- Debounced search → Finnhub API → cached responses → displayed in command menu.
+Debounced search → Finnhub API → cached responses → displayed in command menu.
 
 ### ▶️ Viewing Any Stock
- Fetch quote, profile, metrics → display multiple TradingView widgets → watchlist toggle.
+Fetch quote, profile, metrics → display multiple TradingView widgets → watchlist toggle.
 
 ---
 
@@ -235,6 +235,38 @@ npm run dev
 * Alerts + notifications through email/SMS
 * Multi-currency support
 * Revenue dashboard (admin)
+
+---
+
+
+## 🔄 CI/CD Pipeline
+
+StockPilot is powered by a **fully automated CI/CD pipeline using Vercel**, ensuring continuous integration and zero-downtime deployments.
+## 🔄 CI/CD Pipeline
+<p align="center">
+  <img src="/public/screenshots/CI-CD.png" width="750" />
+</p>
+
+### ✔ What Happens on Every Push
+When code is pushed to the GitHub repository:
+
+1. **Vercel automatically pulls the latest commit**
+2. **Installs all dependencies** in an isolated build environment
+3. **Runs linting & static analysis** to validate code integrity
+4. **Builds the Next.js application** using the Vercel build system
+5. **Creates a Preview Deployment** for pull requests
+    - Each PR gets its own unique live URL
+6. **Auto-deploys to Production** when changes are merged into `main`
+
+### ✔ Benefits
+- No manual deployment steps
+- Fast, reproducible builds
+- Safe PR testing with preview URLs
+- Fully managed infrastructure with rollback support
+
+This ensures StockPilot remains reliable, scalable, and continuously updated with every commit.
+
+---
 
 ---
 
